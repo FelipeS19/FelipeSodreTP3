@@ -23,3 +23,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootRun {
+	systemProperties['server.port'] = '80'
+	systemProperties['server.servlet.context-path'] = '/'
+}
